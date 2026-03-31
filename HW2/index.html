@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>資工選課表</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+        }
+
+        h1 {
+            margin-left: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px;
+            background-color: white;
+        }
+
+        th {
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-top: 1px solid #ccc;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>資工選課表</h1>
+    <table id="csie">
+    <tr style="background-color: green;">
+        <th style="color: white;">開課單位</th>
+        <th style="color: white;">課程名稱</th>
+        <th style="color: white;">授課教師</th>
+    </tr>
+    <tr>
+        <td>資工系</td>
+        <td >
+            <a href="https://catalog.cgu.edu.tw/coursedata?sectionid=A2337" target="_blank">
+             物件導向軟體設計
+            </a>
+        </td>
+        <td>黃崇源</td>
+    </tr>
+    <tr>
+        <td>資工系</td>
+        <td>
+            <a href="https://catalog.cgu.edu.tw/coursedata?sectionid=71790" target="_blank">
+             計算機網路   
+            </a>
+        </td>
+        <td>李春良</td>
+    </tr>
+    <tr>
+        <td>資工系</td>
+        <td>
+            <a href="https://catalog.cgu.edu.tw/coursedata?sectionid=A2338" target="_blank">
+             作業系統實務   
+            </a>
+        </td>
+        <td>張哲維</td>
+    </tr>
+    <tr>
+        <td>資工系</td>
+        <td>
+            <a href="https://catalog.cgu.edu.tw/coursedata?sectionid=71790" target="_blank">
+             生物統計   
+            </a>
+        </td>
+        <td>陳光武</td>
+    </tr>
+    <tr>
+        <td>資工系</td>
+        <td>
+            <a href="https://catalog.cgu.edu.tw/coursedata?sectionid=A2339" target="_blank">
+             通訊系統   
+            </a>
+        </td>
+        <td>陳仁暉</td>
+    </tr>
+    <tr>
+        <td>資工系</td>
+        <td>
+            <a href="https://catalog.cgu.edu.tw/coursedata?sectionid=A2340" target="_blank">
+             軟硬體專題(2)   
+            </a>
+        </td>
+        <td>魏志達</td>
+    </tr>
+    </table>
+    <button onclick="changeResult()">change</button>
+    <script>
+    function changeResult(){
+     var myTable=document.getElementById("csie");
+     myTable.rows[1].cells[2].innerHTML="李春良";
+    }
+    </script>
+
+</body>
+</html>
+
+
+
