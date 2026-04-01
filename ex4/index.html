@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ex4</title>
+</head>
+<body>
+  <h1>ex4 Christmas Tree</h1>
+
+  <script>
+    function repeatchar(n, ch) {
+      return ch.repeat(n);
+    }
+
+    function printTreeTop(n) {
+      for (let i = 1; i <= n; i++) {
+        let space = repeatchar(n - i, " ");
+        let star = repeatchar(2 * i - 1, "*");
+        console.log(space + star);
+      }
+    }
+
+    function printTreeBottom(n) {
+      for (let i = 0; i < 3; i++) {
+        let space = repeatchar(n - 1, " ");
+        let star = "*";
+        console.log(space + star);
+      }
+    }
+
+    function tree(n) {
+      printTreeTop(n);
+      printTreeBottom(n);
+    }
+
+    tree(4);
+  </script>
+</body>
+</html>
